@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./d3.js"></script>
+    <style>
+        table,
+        tr,
+        td {
+            width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body onload="initHtml()">
+    <p>first p tag</p>
+    <p>second p tag</p>
+    <table>
+        <tr>
+            <td>1231</td>
+            <td>1232</td>
+        </tr>
+        <tr>
+            <td>1233</td>
+            <td>1234</td>
+        </tr>
+    </table>
+</body>
+
+<script>
+    function initHtml() {
+        let pto = d3.select("p");
+        pto.text("hi P tag");
+        
+    }
+</script>
+
+</html>
