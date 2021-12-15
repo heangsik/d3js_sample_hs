@@ -18,6 +18,8 @@
 <body onload="initHtml()">
     <p>first p tag</p>
     <p>second p tag</p>
+    <p class="ptag">third p tag</p>
+    <p class="ptag">fourth p tag</p>
     <table>
         <tr>
             <td>1231</td>
@@ -35,6 +37,9 @@
         let pto = d3.select("p");
         pto.text("hi P tag");
         pto.text("hi ptag change");
+
+        let cptg = d3.selectAll(".ptag");
+        cptg.text("ptag class change");
 
         
     }
