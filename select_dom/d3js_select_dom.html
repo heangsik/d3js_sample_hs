@@ -22,8 +22,8 @@
     <p class="ptag">fourth p tag</p>
     <table>
         <tr>
-            <td>1231</td>
-            <td>1232</td>
+            <td class='tblHead'>1231</td>
+            <td class='tblHead'>1232</td>
         </tr>
         <tr>
             <td>1233</td>
@@ -39,7 +39,9 @@
 
         let cptg = d3.selectAll(".ptag");   // html에서 class가 ptag인 모든 것들을 찾는다.
         cptg.text("ptag class change");     // 찾은 객체의 모든 text를 변경한다.
-
+        
+        let tblHdO = d3.selectAll('td.tblHead');    // html에서 td tag 중 class가 tblHead인 모든 항목을 찾는다.
+        tblHdO.style("background-color", "yellow"); // 찾은 객체의 backgroud-color를 yellow로 변경한다.
         
     }
 </script>
