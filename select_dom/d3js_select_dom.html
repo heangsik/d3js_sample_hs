@@ -34,12 +34,11 @@
 
 <script>
     function initHtml() {
-        let pto = d3.select("p");
-        pto.text("hi P tag");
-        pto.text("hi ptag change");
+        let pto = d3.select("p");       // html 에서 첫번째 나오는 p tag를 찾는다.
+        pto.text("hi ptag change");     // 찾은 객체에 text를 변경한다.
 
-        let cptg = d3.selectAll(".ptag");
-        cptg.text("ptag class change");
+        let cptg = d3.selectAll(".ptag");   // html에서 class가 ptag인 모든 것들을 찾는다.
+        cptg.text("ptag class change");     // 찾은 객체의 모든 text를 변경한다.
 
         
     }
